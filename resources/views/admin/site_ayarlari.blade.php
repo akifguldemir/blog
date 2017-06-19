@@ -20,7 +20,7 @@
 
                         {!! Form::open(['url' => '/site-ayarlari/guncelle',"method"=>"put"]) !!}
                         @foreach($ayarlar as $ayar)
-                         {!! Form::bsText($ayar->name,trans("formlar.".$ayar->name),$ayar->value) !!}
+                           {!! Form::bsText($ayar->name,trans("formlar.".$ayar->name),$ayar->value) !!}
 
                             @endforeach
                         {!! Form::bsSubmit("Kaydet") !!}
